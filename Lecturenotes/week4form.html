@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Unit 4 Forms</title>
+    </head>
+    <body>
+        <!--form tag tells where your form starts and ends  POST means data in form is submit on the back end-->
+        <form action="mailto:zliu159@syr.edu" method="POST">
+            <!--input is for short text, the value os the for attribute must match the calus of the id attibute input-->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fulln">
+            <br><br> 
+            <!--textarea is for lots of writing-->
+            <label for="complaints">Complaints:</label>
+            <textarea id="complaints" name="complaints">Write your complaints here</textarea>
+            <br>
+            <p>How angry are you?</p>
+            <input type="radio" id="level1" name="level" value="very angry">
+            <label for="level">very angry</label>
+            <input type="radio" id="level2" name="level" value="not very angry">
+            <label for="level2">not very angry</label>
+            <br>
+            <label for="contact">Method of Contact</label>
+            <select id="contact" name="contact">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="snail mail">Snail Mail</option>
+            </select>
+            <br>
+            <label for="afterbiz">Call after 5pm?</label>
+            <input type="checkbox" id="afterbiz" name="after5pm" value="yes">
+            <br>
+            <input type="submit" value="Send my Complaint">
+        </form>
+    </body>
+</html>

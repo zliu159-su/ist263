@@ -1,0 +1,16 @@
+p, h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1, h2 {
+    color: coral;
+}
+.special{color: coral;}
+.evenrow{
+    background-color: coral;
+}
+h1{
+    font-size: 130%;
+}
+h2 {
+    font-size: 110%;
+}

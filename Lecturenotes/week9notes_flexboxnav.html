@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: black;
+            color: white;
+            padding: 5px;
+            display: flex;
+        }
+        .myrow1 {
+            justify-content: flex-end; /* right justofies content inside flexbox */
+            margin-bottom: 15px;
+        }
+        .myrow2 {
+            justify-content: space-around;
+            margin-bottom: 15px;
+        }
+        .myrow3 {
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .myrow4 div {
+            border: 1px solid purple;
+        }
+        .social div {
+            border: 1px solid coral;
+        }
+        .outerflexbox {justify-content: space-between;}
+    </style>
+</head>
+<body>
+    <p>Right justified navigation.</p>
+    <div class="myrow1">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </div>
+
+    <p>Equal space around all the flexbox columns.</p>
+    <div class="myrow2">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </div>
+
+    <p>All space distributed between the elements.</p>
+    <div class="myrow3">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </div>
+
+    <p>This is going to layout some items ont he left and some on the right</p>
+    
+    
+    <p>Three flexboxes - an outer with two columns and then two nexted flexboxes inside those columns.</p>
+    <div class="outerflexbox">
+        <div>
+            <div class="myrow4">
+                <div>Home</div>
+                <div>About Us</div>
+                <div>Products</div>
+                <div>Contact</div>
+            </div>
+        </div>
+        <div>
+            <div class="social">
+                <div>Facebook</div>
+                <div>Twitter</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

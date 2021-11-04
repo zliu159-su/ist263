@@ -14,3 +14,12 @@ nav {
 .evenrow {
     background-color: #D57E7E;
 }
+@media only screen and (max-width: 600px) {
+    a {
+        display: block;
+    }
+    span {display: none;}
+}
+
+
+

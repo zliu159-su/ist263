@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body {background-color: rgba(240, 236, 234, 0.932);}
+            .address {float: left;}
+            .clear1 {clear: both;}
+            .address, .email {margin-right: 30px;}
+            .img1 {width: 50px;}
+            .addressandlinks {
+                border-radius: 25px;
+                border: 1px solid white;
+                background-color: white;
+                padding: 30px;
+                margin: 30px
+            }
+
+            .fmap {
+                border-radius: 25px;
+                border: 1px solid white;
+                background-color: white;
+                margin: 30px;
+                padding: 30px;
+            }
+
+            .form {float: left;}
+            .clear2 {clear: both;}
+            .form, map {margin-right: 30px;}
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <a href="index.html">Home|</a>
+            <a href="skills.html">Skills|</a>
+            <a href="contact.html">Contact</a>
+         </nav>
+        <h1>Contact</h1>
+        <h2>Address</h2>
+        <div class="addressandlinks">
+            <div class="address">
+                <p>Aspen Syracuse</p>
+                <p>4101 Brighton Pl</p>
+                <p>Syracuse, NY 13210</p>
+            </div>
+            
+            <div class="email">
+                <a href="zliu159@syr.edu">Alice Liu Email</a>
+                <a href="LI-Logo.png"></a>
+                <br>
+                <img src="LI-Logo.png" class="img1" alt="">
+                <a href="https://www.linkedin.com/in/aliceziqingliu/">My LinkedIn Profile</a>
+            </div>
+            <div class="clear1"></div>
+        </div>
+      
+        <div class="fmap">
+            <div class="form">
+                <form action="mailto:zliu159@syr.edu" method="POST"></form>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fulln">
+                <br><br> 
+                <label for="complaints">Complaints:</label>
+                <textarea id="complaints" name="complaints">Write your complaints here</textarea>
+                <p>Do you like my page?</p>
+                <input type="radio" id="level1" name="level" value="very like">
+                <label for="level1">very like</label>
+                <input type="radio" id="level2" name="level" value="hate it">
+                <label for="level2">hate it</label>
+                <br><br>
+                <label for="afterbiz">Contact me?</label>
+                <input type="checkbox" id="afterbiz" name="contact me?" value="yes">
+                <br>
+                <input type="submit" value="Send my Complaint">
+            </div>
+        
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.5639843141!2d-76.1422817501284!3d43.0233936479472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39f5c09ad9f%3A0xd31442eade1b4cbd!2sAspen%20Syracuse!5e0!3m2!1sen!2sus!4v1631807842899!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="clear2"></div>
+        </div>
+       
+
+    </body>
+</html>

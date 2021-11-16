@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // this is where our JavaScript comment goes
+        // every line of HavaScript needs a ; at the end
+        function firstFunction () {
+            alart('Hello World');
+        }
+        // functions are named blocks of code
+        // you can find errors in the console by inspecting
+        function secondFunction () {
+            alart('second alart.');
+        }
+        function passwordMessage () {
+            alart('you did nit type a password!');
+        }
+    </script>
+</head>
+<body onload="firstFunction();">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <a href="" onclick="secondFunction();">This is an alart that will say second alart</a>
+    <!--onclick is an event, it will run the code inside secondFunction-->
+
+    <form>
+        <label for="username">Username: </label><br>
+        <input type="text" name="username" id="username"><br>
+        <label>Password:</label><br>
+        <input type="text" name="password" id="password" onblur="passwordMessage();"><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

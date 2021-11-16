@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* skip to content is 3 things
+        1. html link "skip to content"
+        2. you need to put in your anchor - where it will skip to
+        3. style it in css - position absolute and left to make is disappear
+        3b. bring it back by changing position
+        */
+
+        #skip {
+            position: absolute;
+            left: -999px;
+            background-color: chartreuse;
+        } /*positions the element relative to it's parent*/
+        /* # sign before selector means your selecting by id*/
+        #skip:focus {
+            left: 10px; /* move the skip back on screen when it's tabbed to */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <a id="skip" href="#contect">Skip to Content</a>
+    <!--that pound sigh says the link is moving you down the page-->
+    <a href="index.html" tabindex="3">Home</a>
+    <a href="about.html" tabindex="2">About</a>
+    <a href="contact" tabindex="1">contact</a>
+
+    <!--tabindex is an html attibutes that will cahnge the order items are selected as you tab thru them-->
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc faucibus a pellentesque sit amet porttitor. Volutpat est velit egestas dui id ornare arcu odio. Nunc pulvinar sapien et ligula ullamcorper. Dictumst vestibulum rhoncus est pellentesque elit. Arcu non odio euismod lacinia. Sagittis vitae et leo duis ut diam quam nulla. Quis blandit turpis cursus in hac habitasse platea dictumst. Venenatis lectus magna fringilla urna porttitor rhoncus. Etiam sit amet nisl purus in mollis nunc sed id. Ipsum dolor sit amet consectetur adipiscing. Massa ultricies mi quis hendrerit dolor magna eget est lorem. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Arcu cursus vitae congue mauris. Mattis pellentesque id nibh tortor id aliquet lectus proin nibh. Lectus sit amet est placerat in egestas erat imperdiet sed. Neque convallis a cras semper auctor neque vitae tempus.
+    </p>
+    <p>
+        Leo urna molestie at elementum eu. Turpis egestas maecenas pharetra convallis posuere. Integer eget aliquet nibh praesent tristique magna. Aliquam id diam maecenas ultricies mi eget mauris. Congue eu consequat ac felis donec et. Velit laoreet id donec ultrices. Dignissim enim sit amet venenatis urna cursus eget. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Elementum tempus egestas sed sed risus pretium quam vulputate dignissim. Quis commodo odio aenean sed adipiscing diam. Morbi tristique senectus et netus. A lacus vestibulum sed arcu non. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Urna molestie at elementum eu facilisis sed odio. Facilisi morbi tempus iaculis urna id volutpat lacus. Felis imperdiet proin fermentum leo vel orci porta non pulvinar.
+    </p>
+    <p>
+        Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Amet nisl suscipit adipiscing bibendum est ultricies integer. Orci dapibus ultrices in iaculis nunc sed augue. Ut porttitor leo a diam sollicitudin tempor. Morbi tristique senectus et netus. Turpis egestas sed tempus urna. Vitae purus faucibus ornare suspendisse sed nisi. Aliquet eget sit amet tellus cras adipiscing enim eu. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Non pulvinar neque laoreet suspendisse interdum consectetur. Nulla facilisi etiam dignissim diam quis. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Aenean sed adipiscing diam donec. Et malesuada fames ac turpis egestas sed tempus urna. Urna molestie at elementum eu facilisis sed odio morbi. Sit amet nisl purus in mollis. Dignissim cras tincidunt lobortis feugiat. At in tellus integer feugiat scelerisque varius. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh.
+
+    </p>
+    <a id="content"></a> <!--this is an anchor point to allow a link to move you here-->
+    <p>
+        Diam volutpat commodo sed egestas egestas fringilla phasellus. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Lacus sed turpis tincidunt id aliquet risus feugiat in. Sit amet volutpat consequat mauris nunc congue nisi vitae. Mollis aliquam ut porttitor leo. Dolor morbi non arcu risus quis. Quis ipsum suspendisse ultrices gravida dictum. Velit scelerisque in dictum non consectetur a. Egestas fringilla phasellus faucibus scelerisque. Auctor neque vitae tempus quam pellentesque nec nam aliquam sem. Amet consectetur adipiscing elit duis tristique sollicitudin. Curabitur vitae nunc sed velit dignissim sodales ut eu sem. Auctor urna nunc id cursus metus aliquam eleifend mi.   
+
+    </p>
+
+</body>
+</html>
